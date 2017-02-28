@@ -11,6 +11,7 @@
 |
 */
 
+use App\Http\Controllers\UserAdminController;
 use Illuminate\Support\Facades\Route as Route;
 
 Route::get('/', function () {
@@ -25,5 +26,7 @@ Route::get('/page2', function () {
 Route::get('/page3', function () {
     return view('page3');
 });
+
+Route::resource('/admin/users', 'UserAdminController');
 
 Auth::routes();
