@@ -181,6 +181,7 @@ return [
          */
         PragmaRX\Tracker\Vendor\Laravel\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -233,6 +234,9 @@ return [
          *
          */
         'Tracker' => PragmaRX\Tracker\Vendor\Laravel\Facade::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'User'=> App\User::class
     ],
 
 ];

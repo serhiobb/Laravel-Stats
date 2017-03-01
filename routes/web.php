@@ -27,6 +27,15 @@ Route::get('/page3', function () {
     return view('page3');
 });
 
-Route::resource('/admin/users', 'UserAdminController');
+Route::resource('/admin/users', 'UserAdminController', ['names' => [
+    'index' => 'user-admin',
+    'update' => 'user-admin.update',
+    'create' => 'user-admin.create',
+    'edit' => 'user-admin.edit',
+    'store' => 'user-admin.store',
+    'destroy' => 'user-admin.destroy'
+]]);
+
+Route::get('/admin/users/{user}/delete', 'UserAdminController@destroy');
 
 Auth::routes();

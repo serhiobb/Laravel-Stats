@@ -17,6 +17,7 @@ class PhpEngine implements EngineInterface
      */
     public function get($path, array $data = [])
     {
+        var_dump($data);die();
         return $this->evaluatePath($path, $data);
     }
 

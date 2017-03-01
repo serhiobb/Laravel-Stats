@@ -6,11 +6,11 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
-        "dick/crud": "^0.8.18",
         "doctrine/dbal": "^2.5",
         "geoip2/geoip2": "~2.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
+        "laravelcollective/html": "^5.3.0",
         "pragmarx/tracker": "^3.1"
     },
     "require-dev": {
